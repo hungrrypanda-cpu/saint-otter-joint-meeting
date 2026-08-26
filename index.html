@@ -409,6 +409,18 @@
   }
   .admin-link:hover{ opacity:1; color:var(--accent); }
 
+  .footer-promo{
+    margin-top:4px;
+    padding-top:16px;
+    border-top:1px solid var(--line);
+    max-width:420px;
+    font-size:12.5px;
+    line-height:1.7;
+    color:var(--ink-dim);
+  }
+  .footer-promo a{ color:var(--accent); text-decoration:none; }
+  .footer-promo a:hover{ text-decoration:underline; }
+
   @media (max-width:420px){
     .field-row{ flex-direction:column; }
     .detail-label{ width:44px; font-size:11px; }
@@ -650,13 +662,14 @@
       + '<div class="divider wrap">◆</div>'
       + '<section class="intro wrap">'
       +   '<h2>모임 전과 후, 인스타로 인사해요</h2>'
-      +   '<p>모든 정보 제공은 optional 입니다! 안 남기셔도 무방합니다 ;)</p>'
+      +   '<p>모든 정보 제공은 optional 입니다! 안 남기셔도 무방합니다 :) 기록된 정보는 모임 개최 후 일주일 뒤에 삭제됩니다.</p>'
       + '</section>'
       + formHTML()
       + '<section class="guestbook wrap" id="gb-root">' + guestbookHTML(ENTRIES) + '</section>'
       + '<footer>'
       +   '<div>SAINT OTTER BAR JOINT MEETING · 즐거운 자리에서 만나요</div>'
       +   '<button type="button" id="admin-toggle" class="admin-link">' + (isAdminFlag ? "관리자 모드 종료" : "관리자이신가요?") + '</button>'
+      +   '<div class="footer-promo">여러분이 속한 다른 모임도 오터바에서 행사를 진행해 보세요 ❤️<br>특별한 할인 혜택까지 — 문의는 인스타그램 <a href="https://instagram.com/saint.otter.bar" target="_blank" rel="noopener">@saint.otter.bar</a>로 DM 주세요.</div>'
       + '</footer>';
   }
 
