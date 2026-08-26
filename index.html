@@ -423,6 +423,12 @@
   }
   .footer-promo a{ color:var(--accent); font-weight:700; text-decoration:underline; text-underline-offset:2px; }
   .footer-promo a:hover{ opacity:0.85; }
+  .footer-promo u{
+    text-decoration:underline;
+    text-decoration-color:var(--accent);
+    text-underline-offset:3px;
+    text-decoration-thickness:2px;
+  }
 
   @media (max-width:420px){
     .field-row{ flex-direction:column; }
@@ -672,7 +678,7 @@
       + '<footer>'
       +   '<div>SAINT OTTER BAR JOINT MEETING · 즐거운 자리에서 만나요</div>'
       +   '<button type="button" id="admin-toggle" class="admin-link">' + (isAdminFlag ? "관리자 모드 종료" : "관리자이신가요?") + '</button>'
-      +   '<div class="footer-promo">혹시 다른 모임의 멤버신가요? 오터바에서 모임을 진행해 보세요.<br>특별한 할인 혜택이 있습니다. 문의는 인스타그램 <a href="https://instagram.com/saint.otter.bar" target="_blank" rel="noopener">@saint.otter.bar</a>로 DM 주세요.</div>'
+      +   '<div class="footer-promo">혹시 다른 모임의 멤버신가요? 오터바에서 모임을 진행해 보세요.<br>특별한 <u>할인 혜택</u>이 있습니다.<br>문의는 인스타그램 <a href="https://instagram.com/saint.otter.bar" target="_blank" rel="noopener">@saint.otter.bar</a>로 DM 주세요.</div>'
       + '</footer>';
   }
 
